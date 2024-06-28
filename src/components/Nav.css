@@ -1,0 +1,53 @@
+li a {
+  text-decoration: none;
+  color: #faf4c1;
+}
+
+.list li {
+  margin-left: 0;
+  padding-left: 0;
+}
+.list {
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.nav-con {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-wrapper {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 5;
+}
+.btn-contact {
+  color: white;
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: double;
+  padding-right: 30px;
+  border-color: #faf4c1;
+  background-color: transparent;
+}
+.tech-list {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  font-size: 40px;
+}

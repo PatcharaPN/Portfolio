@@ -1,97 +1,12 @@
-import "./App.css";
+import React from "react";
+import { RouteObject, useRoutes } from "react-router-dom";
+import Home from "./pages/Home";
 
-function App() {
-  return (
-    <>
-      <div className="background-container">
-        <div className="shining"></div>
-        <img
-          className="line"
-          src="../src/assets/line.png"
-          width={1000}
-          height={1000}
-          alt=""
-        />{" "}
-        <img
-          className="line2"
-          src="../src/assets/line.png"
-          width={1000}
-          height={1000}
-          alt=""
-        />{" "}
-        <img
-          className="ball"
-          src="../src/assets/ball.png"
-          width={100}
-          height={100}
-          alt=""
-        />
-        <img
-          className="ball2"
-          src="../src/assets/ball.png"
-          width={20}
-          height={20}
-          alt=""
-        />
-        <img
-          className="ring"
-          src="../src/assets/ring.png"
-          width={200}
-          height={200}
-          alt=""
-        />
-        <img
-          className="ring2"
-          src="../src/assets/ring.png"
-          width={100}
-          height={100}
-          alt=""
-        />
-        <img
-          className="square dark"
-          src="../src/assets/square.png"
-          width={100}
-          height={100}
-          alt=""
-        />{" "}
-        <img
-          className="square3 dark"
-          src="../src/assets/square.png"
-          width={100}
-          height={100}
-          alt=""
-        />{" "}
-        <img
-          className="square2 dark"
-          src="../src/assets/square.png"
-          width={100}
-          height={100}
-          alt=""
-        />
-        <img
-          className="square white"
-          src="../src/assets/square-white.png"
-          width={100}
-          height={100}
-          alt=""
-        />
-        <img
-          className="square2 white"
-          src="../src/assets/square-white.png"
-          width={50}
-          height={50}
-          alt=""
-        />
-        <img
-          className="ball3 "
-          src="../src/assets/greenball.png"
-          width={100}
-          height={100}
-          alt=""
-        />
-      </div>
-    </>
-  );
-}
+const App: React.FC = () => {
+  const routes: RouteObject[] = [{ path: "/", element: <Home /> }];
+
+  const element = useRoutes(routes);
+  return element;
+};
 
 export default App;

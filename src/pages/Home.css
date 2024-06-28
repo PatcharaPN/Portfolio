@@ -1,0 +1,73 @@
+.Heroes {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+
+.Content-list {
+  z-index: 20;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 130px;
+  padding-left: 350px;
+  padding-right: 300px;
+  padding-bottom: 600px;
+}
+.Content-1 {
+  p {
+    color: #54cbc4;
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  h2 {
+    color: #54cbc4;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  h1 {
+    color: #fff9c4;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+}
+
+.resume-btn {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: #fff9c4;
+  border-radius: 50px;
+  background-color: transparent;
+  border-style: double;
+  border-color: #fff9c4;
+  padding: 10px 30px 10px 30px;
+}
+
+.header {
+  font-size: 25px;
+  color: #fff9c4;
+  margin-top: 50px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
